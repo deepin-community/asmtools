@@ -1,15 +1,23 @@
-Source: template-repository
-Section: unknown
+Source: asmtools
+Section: java
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Build-Depends:
+ ant,
+ debhelper (>= 13),
+ default-jdk,
+ javahelper
+Standards-Version: 4.6.2
+Vcs-Git: https://salsa.debian.org/java-team/asmtools.git
+Vcs-Browser: https://salsa.debian.org/java-team/asmtools
+Homepage: https://github.com/openjdk/asmtools
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: libasmtools-java
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Description: OpenJDK AsmTools
+ The AsmTools open source project is used to develop tools for the production
+ of proper and improper Java '.class' files. AsmTools are being opened in order
+ to facilitate a community of Java .class file production for various testing
+ and other OpenJDK development applications.

@@ -1,5 +1,11 @@
-template-repository (1.0-1) unstable; urgency=medium
+asmtools (7.0-b09-2) unstable; urgency=medium
 
-  * Initial release
+  * Source only upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 06 Feb 2023 21:22:12 +0100
+
+asmtools (7.0-b09-1) unstable; urgency=medium
+
+  * Import asmtools 7.0-b09 (Closes: #1028366)
+
+ -- Vladimir Petko <vladimir.petko@canonical.com>  Tue, 10 Jan 2023 10:44:47 +1300
